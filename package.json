@@ -5,7 +5,7 @@
   "description": "Rebuilt for react-bootstrap-table",
   "main": "index.js",
   "scripts": {
-    "postinstall": "lerna bootstrap",
+    "postinstall": "yarn bootstrap",
     "build": "./node_modules/.bin/gulp prod",
     "lint": "eslint ./packages --ext .js --ext .jsx --ignore-path .gitignore",
     "pretest": "yarn lint --cache",
@@ -15,7 +15,7 @@
     "storybook": "cd ./packages/react-bootstrap-table2-example && yarn storybook",
     "gh-pages:clean": "cd ./packages/react-bootstrap-table2-example && yarn gh-pages:clean",
     "gh-pages:build": "cd ./packages/react-bootstrap-table2-example && yarn gh-pages:build",
-    "release": "yarn install && yarn build && lerna publish"
+    "release": "yarn install && yarn build && yarn publish"
   },
   "repository": {
     "type": "git",
